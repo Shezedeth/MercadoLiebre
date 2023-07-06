@@ -1,0 +1,102 @@
+/* -------- header -------- -------- */
+.home__header {
+  background-color: var(--colorAmarillo);
+}
+
+.home__header__title {
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+.home__header--search {
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+.home__header--search-input {
+  display: block;
+}
+
+.home__header--search-icon {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 3px;
+
+}
+.home__header--search-icon i {
+  font-size: 18px;
+}
+
+.home__header__box--menu {
+  font-size: var(--zizeCuerposDeTexto);
+  margin-bottom: 20px;
+}
+
+.home__header__box--menu ul li a {
+  color: black;
+}
+.home__header__nav--menu {
+  font-size: var(--zizeCuerposDeTexto);
+}
+.home__header__nav--menu ul li a {
+  color: black;
+}
+
+.home__header__box--burger-menu {
+  display: inline-block;
+  background-color: var(--colorCeleste);
+  color: white;
+  padding: 12px 15px 12px;
+  margin: 30px 136px 30px;
+  border-radius: 3px;
+}
+.home__header--logo {
+  margin: 15px auto 30px;
+  width: 180px;
+}
+/* -------- main -------- -------- */
+
+
+.home__main__box--banner {
+  display: none;
+}
+.home__main__section--title-lastVisit {
+    font-size: var(--zizeTitulares);
+}
+.home__main__section__article {
+    margin-bottom: 45px;
+}
+.home__main__section__article__box-image {
+  width: 100%;
+}
+.home__main__section__article--prise {
+    font-size: var(--zizePrecios);
+}
+.home__main__section__article--discount {
+    font-size: var(--zizeDescuentos);
+}
+.home__main__section__article--product {
+    font-size: var(--zizeDescripciones);
+}
+/* -------- footer -------- -------- */
+
+.home__footer__article {
+  text-align: center;
+  padding: 30px;
+}
+
+.home__footer__article i {
+  font-size: 2rem;
+  color: var(--colorCeleste);
+  margin-bottom: 10px;
+}
+.home__footer__article__icon-title {
+  font-size: var(--zizeDescripciones);
+}
+
+.home__footer__article__icon-text {
+  font-size: var(--zizeCuerposDeTexto);
+}
+.home__footer__article-copyright {
+  font-size: 10px;
+}
