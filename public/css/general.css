@@ -1,0 +1,38 @@
+:root {
+/* ---colores--- */
+    --colorAmarillo: #EAC926;
+    --colorAzul: #03264C;
+    --colorCeleste: #1259c3;
+    --colorGrisOscuro: #666;
+    --colorGrisClaro: #ebebeb;
+    --colorVerde: #39b54a;
+    --colorBordeGris: #ebebeb;
+/*--- tamaño de letras--- */
+    --fontSizeCuerposDeTexto: 12px;
+    --fontSizeTitulares: 24px;
+    --fontSizePrecios: 18px;
+    --fontSizeDescuentos: 16px;
+    --fontSizeDescripciones: 16px
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    padding: 0;
+}
+body {
+    font-family: 'Roboto';
+    background-color: rgb(223, 223, 223);
+
+}
