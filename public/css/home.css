@@ -6,6 +6,7 @@
   flex-wrap: wrap;
   align-items: center;
   padding-bottom: 20px;
+  justify-content: center;
 }
 .home__header__box--logo {
   width: 50%;
@@ -280,8 +281,9 @@
     flex-direction: row;
     /* gap: 31px; */
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     align-content: center;
+    padding-right: 10px;
   }
   .home__header__nav--menu ul li a {
     display: flex;
