@@ -78,12 +78,17 @@
 }
 
 .home__header__box--burger-menu {
+  display: block;
   padding-bottom: 15px;
   width: 100%;
 }
 
+.showMenu {
+  height: auto;
+}
+
 .home__header__box--burger-menu i {
-  display: block;
+
   width: 41px;
   height: 33px;
   background-color: var(--colorCeleste);
@@ -106,8 +111,9 @@
   margin: 0 auto;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  padding: 0px 0px;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .home__main__box--banner {
@@ -339,18 +345,39 @@
     width: 100%;
     margin: 0 auto;
   }
+  .home__main__section__article {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 20%;
+  }
+  
   .home__main__box--banner {
     display: block;
     width: 100%;
     padding: 0;
     margin: 0;
   }
+  
+  .home__main__section__article--product {
+    font-size: var(--fontSizeDescripciones);
+    height: 0;
+    /* padding-top: 20px; */
+    overflow: hidden;
+    transition: all 1s ease;
+  }
+  
+  
+  /* ANIMACION */
+  
+  .home__main__section__article:hover .home__main__section__article--product {
+      height: 40px;
+  }
+  
+  
+  
   .home__main__box--banner img {
     width: 100%;
-  }
-  .home__main__section__article {
-    width: 20%;
-    margin: 17px;
   }
   .home__main__section__article--discount {
     width: 70%;
