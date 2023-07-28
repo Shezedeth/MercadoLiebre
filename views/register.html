@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://kit.fontawesome.com/52f3957177.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <title>Mercadoliebre | Login</title>
+</head>
+
+<body>
+    <header class="home__header">
+        <div class="home__header__box--logo">
+            <img class="home__header--logo" src="/images/logo-mercado-liebre.svg" alt="logo_mercado_liebre">
+        </div>
+        <div class="home__header--search">
+            <div class="home__header--search-input">
+                <input type="text" placeholder="  Buscar productos, marcas">
+                <a href="" class="home__header--search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+            </div>
+
+        </div>
+        <div class="home__header__title">
+            <h1>
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+                Compra en cuotas sin tarjeta de credito
+            </h1>
+        </div>
+
+        <div class="home__header__box--menu">
+            <ul>
+                <li><a href="#Ofertas">Ofertas</a></li>
+                <li><a href="#Tiendas">Tiendas Oficiales</a></li>
+                <li><a href="#Vender">Vender</a></li>
+                <li><a href="#Ayuda">Ayuda</a></li>
+            </ul>
+        </div>
+        <nav class="home__header__nav--menu">
+            <ul>
+                <li><a href="/register">Creá tu cuenta <i class="fa-solid fa-address-card"></i></a></li>
+                <li><a href="/login">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
+                <li><a href="#">Mis compras <i class="fa-sharp fa-solid fa-basket-shopping"></i></a></li>
+            </ul>
+        </nav>
+        <div class="home__header__box--burger-menu">
+            <a onclick="document.querySelector('home__header__box--burger-menu').classList.toggle('showMenu')">
+                <i class="fas fa-bars"></i>
+            </a>
+        </div>
+
+    </header>
+    <main class="container">
+        <div class="row">
+            <div class="col-12 col-md-10 col-lg-8 mx-auto">
+                <div class="card register__main__card">
+                    <div class="card-body">
+                        <form action="" class="row register__main__form">
+                            <div class="col-12 mb-3">
+
+                                <input class="form-control" placeholder="Nombre y Apellido" id="name" type="text"
+                                    name="name" pattern="{4,15}" required>
+                            </div>
+                            <div class="col-12 mb-3">
+
+                                <input class="form-control" placeholder="Nombre de Usuario" id="surname" type="text"
+                                    name="surname" pattern="{4,15}" required>
+                            </div>
+                            <div class="col-12 mb-3">
+
+                                <input class="form-control" placeholder="Email" id="email" type="email" name="email"
+                                    pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                            </div>
+
+                            <div class="col-12 mb-3">
+                                <label class="form-label" for="date">Fecha de Nacimiento</label>
+                                <input class="form-control" id="date" type="date" name="date" placeholder="mm/dd/yyyy" required>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <label class="form-label" for="address">Domicilio</label>
+                                <input class="form-control" id="address" type="address" name="address"
+                                    placeholder="calle #1234" required>
+                            </div>
+                            <div class="col-12 mb-3">
+
+                                <select class="form-select" aria-placeholder="Domicilio" name="city" id="city">
+                                    <option value="" hidden selected>Seleccione la localidad...</option>
+                                    <option value="lh">Loma Hermosa</option>
+                                    <option value="ros">Rosario</option>
+                                    <option value="caba">Buenos Aires</option>
+                                    <option value="mag">Magdalena</option>
+                                    <option value="mor">Morón</option>
+                                    <option value="lan">Lanús</option>
+                                    <option value="hu">Hurlingham</option>
+                                    <option value="jcp">José C. Paz</option>
+                                    <option value="zar">Zárate</option>
+                                    <option value="cor">Córdoba</option>
+                                    <option value="smi">San Miguel</option>
+                                    <option value="ave">Avellaneda</option>
+                                    <option value="tuc">Tucumán</option>
+                                </select>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <label class="form-label" for="province">Provincia</label>
+                                <select class="form-select" name="province" id="province">
+                                    <option value="" hidden selected>Seleccione la provincia...</option>
+                                    <option value="lh">Buenos Aires</option>
+                                    <option value="ros">Santa Fe</option>
+                                    <option value="caba">CABA</option>
+                                    <option value="cor">Córdoba</option>
+                                    <option value="tuc">Tucumán</option>
+                                </select>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <h5>Perfil de usuario</h5>
+                                <hr>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="Comprador"
+                                        name="preferences" id="Comprador">
+                                    <label class="form-check-label" for="Comprador">Comprador</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="Vendedor" name="preferences"
+                                        id="Vendedor">
+                                    <label class="form-check-label" for="Vendedor">Vendedor</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <h5>Intereses</h5>
+                                <hr>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" value="Electro" name="pay"
+                                        id="Electro">
+                                    <label class="form-check-label" for="Electro">Electro</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" value="Moda" name="pay" id="Moda">
+                                    <label class="form-check-label" for="Moda">Moda</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" value="Hogar" name="pay" id="Hogar">
+                                    <label class="form-check-label" for="Hogar">Hogar</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" value="Juguetería" name="pay"
+                                        id="Juguetería">
+                                    <label class="form-check-label" for="Juguetería">Juguetería</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" value="Vida sana" name="pay"
+                                        id="Vida sana">
+                                    <label class="form-check-label" for="Vida sana">Vida sana</label>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="col-12 mb-3">
+                                <h5>Seleccione una imagen de perfil</h5>
+                                <input class="form-control" id="userImg" type="file" accept=".jpg" name="userImg">
+                            </div>
+                            <hr>
+                            <div class="col-12  mb-3">
+                                <input class="form-control" placeholder="Contraseña" id="password" type="password"
+                                    name="password" pattern="{4,15}" required>
+                            </div>
+                            <div class="col-12  mb-3">
+                                <input class="form-control" placeholder="Confirme su contraseña" id="password2"
+                                    type="password" name="password2" pattern="{4,15}" required>
+                            </div>
+
+                            <div class="col-12 d-flex justify-content-end gap-4">
+                                <button type="reset" class="buttons btn btn-secondary">Limpiar</button>
+                                <button type="submit" class="buttons btn btn-primary">Enviar</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="/index.js"></script>
+</body>
+
+</html>

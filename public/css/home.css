@@ -6,6 +6,7 @@
   flex-wrap: wrap;
   align-items: center;
   padding-bottom: 20px;
+  justify-content: center;
 }
 .home__header__box--logo {
   width: 50%;
@@ -49,7 +50,7 @@
   background-color: white;
   color: black;
   position: absolute;
-  padding: 5px;
+  padding: 1px;
 }
 
 .home__header--search-icon i {
@@ -77,12 +78,17 @@
 }
 
 .home__header__box--burger-menu {
+  display: block;
   padding-bottom: 15px;
   width: 100%;
 }
 
+.showMenu {
+  height: auto;
+}
+
 .home__header__box--burger-menu i {
-  display: block;
+
   width: 41px;
   height: 33px;
   background-color: var(--colorCeleste);
@@ -105,8 +111,9 @@
   margin: 0 auto;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  padding: 0px 0px;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .home__main__box--banner {
@@ -280,8 +287,9 @@
     flex-direction: row;
     /* gap: 31px; */
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     align-content: center;
+    padding-right: 10px;
   }
   .home__header__nav--menu ul li a {
     display: flex;
@@ -317,24 +325,59 @@
 }
 @media (min-width: 1024px) {
   /* header */
-
+  .home__header__title h1 {
+    font-size: 0.8rem;
+  }
+  .home__header__box--menu ul li a {
+    font-size: 1rem;
+  }
+  .home__header__nav--menu ul li a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* align-content: center; */
+    /* padding: 0 0px; */
+    padding: 0 8px;
+    font-size: 1rem;
+}
   /* main */
   .home__main {
     width: 100%;
     margin: 0 auto;
   }
+  .home__main__section__article {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 20%;
+  }
+  
   .home__main__box--banner {
     display: block;
     width: 100%;
     padding: 0;
     margin: 0;
   }
+  
+  .home__main__section__article--product {
+    font-size: var(--fontSizeDescripciones);
+    height: 0;
+    /* padding-top: 20px; */
+    overflow: hidden;
+    transition: all 1s ease;
+  }
+  
+  
+  /* ANIMACION */
+  
+  .home__main__section__article:hover .home__main__section__article--product {
+      height: 40px;
+  }
+  
+  
+  
   .home__main__box--banner img {
     width: 100%;
-  }
-  .home__main__section__article {
-    width: 20%;
-    margin: 17px;
   }
   .home__main__section__article--discount {
     width: 70%;

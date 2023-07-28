@@ -1,0 +1,19 @@
+.login__main__form {
+    padding-top: 25px;
+}
+
+.login__main__form__bg {
+    background-color: var(--colorGrisClaro);
+    border: none;
+}
+.login__main__form__bg form div {
+    margin: 35px 0px;
+}
+.register__main__card {
+    background-color: var(--colorGrisClaro);
+    border: none;
+}
+.register__main__form {
+    background-color: var(--colorGrisClaro);
+    border: none;
+}
