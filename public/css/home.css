@@ -114,6 +114,7 @@
   justify-content: space-around;
   padding: 0px 0px;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .home__main__box--banner {
@@ -310,7 +311,6 @@
   /* main */
 
   .home__main__section__article {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
     width: 45%;
     margin: 17px;
   }
@@ -372,7 +372,11 @@
   
   .home__main__section__article:hover .home__main__section__article--product {
       height: 40px;
+  
   }
+  .home__main__section__article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
   
   
   
