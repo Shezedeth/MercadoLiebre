@@ -16,7 +16,9 @@
 <body>
     <header class="home__header">
         <div class="home__header__box--logo">
-            <img class="home__header--logo" src="/images/logo-mercado-liebre.svg" alt="logo_mercado_liebre">
+            <a href="/">
+                <img class="home__header--logo" src="/images/logo-mercado-liebre.svg" alt="logo_mercado_liebre">
+            </a>
         </div>
         <div class="home__header--search">
             <div class="home__header--search-input">
@@ -64,7 +66,7 @@
                         <form action="" class="row needs-validation" novalidate>
                             <div class="col-12 col-md-12 mb-3">
                                 <input placeholder="Nombre de usuario" class="form-control" id="name" type="text"
-                                    name="name" pattern="{4,15}" required>
+                                    name="name" pattern="[a-z].{4,}" required>
                                 <!-- <input placeholder="Nombre de usuario" class="form-control" id="name" type="text"
                                     name="name" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"  required> -->
                                 <div class="valid-feedback">
@@ -76,7 +78,7 @@
                             </div>
                             <div class="col-12 col-md-12 mb-3">
                                 <input placeholder="Elegí tu contraseña" class="form-control" id="password"
-                                    type="password" name="password" pattern="{4,15}" required>
+                                    type="password" name="password" pattern="[a-z].{4,}" required>
                                 <div class="valid-feedback">
                                     contraseña correcta!
                                 </div>
