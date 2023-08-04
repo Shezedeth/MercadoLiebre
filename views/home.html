@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/styles.css">
     <script src="https://kit.fontawesome.com/52f3957177.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
@@ -18,11 +18,11 @@
             <a href="/">
                 <img class="home__header--logo" src="/images/logo-mercado-liebre.svg" alt="logo_mercado_liebre">
             </a>
-            
+
         </div>
         <div class="home__header--search">
             <div class="home__header--search-input">
-                <input type="text" placeholder="  Buscar productos, marcas">            
+                <input type="text" placeholder="  Buscar productos, marcas">
                 <a href="" class="home__header--search-icon">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </a>
@@ -35,27 +35,31 @@
                 Compra en cuotas sin tarjeta de credito
             </h1>
         </div>
-
-        <div class="home__header__box--menu">
-            <ul>
-                <li><a href="#Ofertas">Ofertas</a></li>
-                <li><a href="#Tiendas">Tiendas Oficiales</a></li>
-                <li><a href="#Vender">Vender</a></li>
-                <li><a href="#Ayuda">Ayuda</a></li>
-            </ul>
-        </div>
-        <nav class="home__header__nav--menu">
-            <ul>
-                <li><a href="/register">Creá tu cuenta <i class="fa-solid fa-address-card"></i></a></li>
-                <li><a href="/login">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
-                <li><a href="#">Mis compras <i class="fa-sharp fa-solid fa-basket-shopping"></i></a></li>
-            </ul>
-        </nav>
         <div class="home__header__box--burger-menu">
-            <a onclick="document.querySelector('home__header__box--burger-menu').classList.toggle('showMenu')" >
+            <a onclick="document.querySelector('.home__header__nav').classList.toggle('showMenu')">
                 <i class="fas fa-bars"></i>
             </a>
         </div>
+
+        <nav class="home__header__nav">
+            <div class="home__header__box--menu">
+                <ul>
+                    <li><a href="#Ofertas">Ofertas</a></li>
+                    <li><a href="#Tiendas">Tiendas Oficiales</a></li>
+                    <li><a href="#Vender">Vender</a></li>
+                    <li><a href="#Ayuda">Ayuda</a></li>
+                </ul>
+            </div>
+            <div class="home__header__nav--menu">
+                <ul>
+                    <li><a href="/register">Creá tu cuenta <i class="fa-solid fa-address-card"></i></a></li>
+                    <li><a href="/login">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
+                    <li><a href="#">Mis compras <i class="fa-sharp fa-solid fa-basket-shopping"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+
+
 
     </header>
     <main class="home__main">
