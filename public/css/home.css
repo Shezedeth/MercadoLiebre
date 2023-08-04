@@ -278,6 +278,7 @@
     height: 11px;
   }
   .home__header__nav {
+    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
